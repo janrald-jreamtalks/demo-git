@@ -274,7 +274,7 @@
                     studentNumber: this.studentNumber 
                   }
 
-                  await axios.post(`${this.api_url}/students`, this.postBody)
+                  await axios.post(`${this.api_url}/students`, body)
 
                   // Refetch Student List
                   await this.getStudents()
