@@ -192,7 +192,7 @@
         <div class="row mt-2">
           <div class="col-md-8 px-0 mx-0">
             <!-- If there are students -->
-            <div class="border table-scrollable" v-if="students.length > 0">
+            <div class="border table-scrollable">
               <table class="table align-middle mb-0">
                 <thead class="text-white bg-blue font-size-13 text-center">
                   <th>Id</th>
@@ -212,15 +212,6 @@
                 </tbody>
               </table>
             </div>
-
-            <!-- If there are no students -->
-              <div v-if="students.length = 0">
-                <div class="text-center text-gray">
-                  <i class="bi bi-file-earmark-x-fill font-size-50"></i>
-                  <p class="mt-1 font-size-13">There are no students yet. Create a <strong>student</strong> by filling up the form above and click the <strong>Submit</strong> button
-                    to create one.</p>
-                </div>
-              </div>
 
           </div>
         </div>
