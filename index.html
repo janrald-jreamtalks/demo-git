@@ -206,7 +206,6 @@
                     <td class="py-2">{{student.studentNumber}}</td>
                     <td class="py-2">{{student.lastName}}, {{student.firstName}} {{student.middleName}} {{student.suffix}}</td>
                     <td>
-                      <button class="btn btn-primary" @click="editStudent(student.id, student.lastName, student.middleName, student.firstName, student.suffix, student.studentNumber)">Edit</button>
                       <button class="btn btn-error" @click="deleteStudent(student.id)">Delete</button>
                     </td>
                   </tr>
