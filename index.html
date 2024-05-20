@@ -35,6 +35,10 @@
                 background-color: #DBDBDB;
             }
 
+            .bg-red {
+                background-color: red;
+            }
+
             /* Text Colors */
             .text-white {
                 color: #FFFFFF;
@@ -206,7 +210,7 @@
                     <td class="py-2">{{student.studentNumber}}</td>
                     <td class="py-2">{{student.lastName}}, {{student.firstName}} {{student.middleName}} {{student.suffix}}</td>
                     <td>
-                      <button class="btn btn-error" @click="deleteStudent(student.id)">Delete</button>
+                      <button class="btn btn-error bg-red text-white" @click="deleteStudent(student.id)">Delete</button>
                     </td>
                   </tr>
                 </tbody>
