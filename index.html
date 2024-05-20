@@ -195,12 +195,14 @@
             <div class="border table-scrollable" v-if="students.length > 0">
               <table class="table align-middle mb-0">
                 <thead class="text-white bg-blue font-size-13 text-center">
+                  <th>Id</th>
                   <th>Student Number</th>
                   <th>Full Name</th>
                   <th></th>
                 </thead>
                 <tbody class="font-size-13">
                   <tr class="text-center" v-for="student in students" :key="student.id">
+                    <td class="py-2">{{student.id}}</td>
                     <td class="py-2">{{student.studentNumber}}</td>
                     <td class="py-2">{{student.lastName}}, {{student.firstName}} {{student.middleName}} {{student.suffix}}</td>
                     <td>
