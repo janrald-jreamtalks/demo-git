@@ -273,7 +273,7 @@
                     suffix: this.suffix, 
                     studentNumber: this.studentNumber 
                   }
-
+                  console.log(body)
                   await axios.post(`${this.api_url}/students`, body)
 
                   // Refetch Student List
