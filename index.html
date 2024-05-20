@@ -165,24 +165,24 @@
               <div class="row">
                 <h3 class="mb-0 px-1 mb-2">Create New Student</h3>
                 <div class="col-md-6 px-1">
-                  <label for="firstName">First Name</label>
-                  <input type="text" id="firstName" class="form-input" v-model="firstName">
+                  <label for="firstName">First Name: {{firstName}}</label>
+                  <input type="text" id="firstName" class="form-input" v-model="firstName"/>
                 </div>
                 <div class="col-md-6 px-1">
                   <label for="middleName">Middle Name</label>
-                  <input type="text" id="middleName" class="form-input" v-model="middleName">
+                  <input type="text" id="middleName" class="form-input" v-model="middleName"/>
                 </div>
                 <div class="col-md-6 px-1">
                   <label for="lastName">Last Name</label>
-                  <input type="text" id="lastName" class="form-input" v-model="lastName">
+                  <input type="text" id="lastName" class="form-input" v-model="lastName"/>
                 </div>
                 <div class="col-md-6 px-1">
                   <label for="suffix">Suffix</label>
-                  <input type="text" id="suffix" class="form-input" v-model="suffix">
+                  <input type="text" id="suffix" class="form-input" v-model="suffix"/>
                 </div>
                 <div class="col-md-6 px-1">
                   <label for="studentNumber">Student Number</label>
-                  <input type="text" id="studentNumber" class="form-input" v-model="studentNumber">
+                  <input type="text" id="studentNumber" class="form-input" v-model="studentNumber"/>
                 </div>
               </div>
               <button class="btn btn-primary py-1" type="button" :disabled="has_error" @click="addStudent()">Submit</button>
