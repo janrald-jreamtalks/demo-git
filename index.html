@@ -203,6 +203,10 @@
                   <tr class="text-center" v-for="student in students" :key="student.id">
                     <td class="py-2">{{student.studentNumber}}</td>
                     <td class="py-2">{{student.lastName}}, {{student.firstName}} {{student.middleName}} {{student.suffix}}</td>
+                    <td>
+                      <button @click="editStudent(student.id, student.lastName, student.middleName, student.firstName, student.suffix, student.studentNumber)">Edit</button>
+                      <button @click="deleteStudent(student.id)">Delete</button>
+                    </td>
                   </tr>
                 </tbody>
               </table>
