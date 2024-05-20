@@ -251,7 +251,8 @@
               try {
 
                 // Get List of Students
-                this.students = await axios.get(`${this.api_url}/students`)
+                const studentsData = await axios.get(`${this.api_url}/students`)
+                this.students = studentsData.data
 
               } catch (error) {
                 if(error) this.has_error = true
