@@ -198,7 +198,7 @@
                   <th>Id</th>
                   <th>Student Number</th>
                   <th>Full Name</th>
-                  <th></th>
+                  <th>Actions</th>
                 </thead>
                 <tbody class="font-size-13">
                   <tr class="text-center" v-for="student in students" :key="student.id">
@@ -267,6 +267,12 @@
                   }
                   
                   await axios.post(`${this.api_url}/students`, body)
+
+                  this.firstName = ""
+                  this.middleName = ""
+                  this.lastName = ""
+                  this.suffix = ""
+                  this.studentNumber = ""
 
                   // Refetch Student List
                   await this.getStudents()
