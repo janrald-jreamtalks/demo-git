@@ -7,7 +7,6 @@
         <meta name="ProgId" content="FrontPage.Editor.Document">
         <meta charset="UTF-8" /> 
         <title>STUDENTS</title>
-        <script>document.domain = /(\w+)(.\w+)?$/.exec(location.hostname)[0];</script>
         <!-- Vue.js -->
         <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
 
@@ -310,7 +309,7 @@
             }
           },
           async mounted() {
-            this.getStudents()
+            await this.getStudents()
           }
         })
       </script>
