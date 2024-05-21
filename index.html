@@ -225,7 +225,7 @@
         new Vue({
           el: "#studentsApp",
           data: {
-            api_url: 'https://students-api-template.onrender.com',
+            api_url: 'https://students-api-6z7c.onrender.com',
             students: [],
             has_error: null,
             firstName: "", 
@@ -290,7 +290,7 @@
 
                 // Put Axios
                 const body = { firstName, middleName, lastName, suffix, studentNumber }
-                await axios.post(`${this.api_url}/students/${id}`, body)
+                await axios.put(`${this.api_url}/students/${id}`, body)
 
                 // Refetch Student List
                 await this.getStudents()
